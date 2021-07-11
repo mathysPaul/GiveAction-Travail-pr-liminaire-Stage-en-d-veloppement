@@ -74,7 +74,7 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
       floatingActionButton: TextButton(
         onPressed: () {
-          _showMyDialog(_value);
+          _showMyDialog(_controller.text);
         },
         child: Text("Display User Input"),
       ),
