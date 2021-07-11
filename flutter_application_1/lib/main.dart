@@ -27,7 +27,6 @@ class MyHomePage extends StatefulWidget {
 
 /// This is the private State class that goes with MyHomePage.
 class _MyHomePageState extends State<MyHomePage> {
-  late String _value;
   late TextEditingController _controller;
 
   Future<void> _showMyDialog(String value) async {
@@ -67,9 +66,6 @@ class _MyHomePageState extends State<MyHomePage> {
       body: Center(
         child: TextField(
           controller: _controller,
-          onSubmitted: (String value) async {
-            _value = value;
-          },
         ),
       ),
       floatingActionButton: TextButton(
